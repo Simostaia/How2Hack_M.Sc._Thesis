@@ -1,3 +1,0 @@
-# NMAP WEBSERVER
-
-nmap webserver
