@@ -1,0 +1,12 @@
+avviare con l'encoding utf-8 con --encoding=utf-8 altrimenti non funziona col terminale di kali
+
+origin potrebbe essere utile...ma non l'ho provato
+
+mettere una hostkeyfile a /dev/null potrebbe evitare i problemi in caso di conflitti col file knowhost
+ci sta sia quella system che quella user
+
+fbidhttp=false vi permette di usarlo anche senza https
+
+python3 run.py --debug=true --encoding="utf-8" --fbidhttp=false --hostfile="/dev/null" --origin='*' --policy=autoadd --redirect=false --syshostfile="/dev/null" --port=8888 --address=0.0.0.0
+
+non cambiare più l'index.html, usiamo quello predefinito

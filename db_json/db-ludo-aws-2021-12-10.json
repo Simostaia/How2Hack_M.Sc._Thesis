@@ -1,0 +1,1562 @@
+[
+{
+   "model": "contenttypes.contenttype",
+   "pk": 1,
+   "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 2,
+   "fields": {
+      "app_label": "auth",
+      "model": "permission"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 3,
+   "fields": {
+      "app_label": "auth",
+      "model": "group"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 4,
+   "fields": {
+      "app_label": "auth",
+      "model": "user"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 5,
+   "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 6,
+   "fields": {
+      "app_label": "sessions",
+      "model": "session"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 7,
+   "fields": {
+      "app_label": "app",
+      "model": "ctfd_configs"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 8,
+   "fields": {
+      "app_label": "app",
+      "model": "cyberkillchain"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 9,
+   "fields": {
+      "app_label": "app",
+      "model": "lab"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 10,
+   "fields": {
+      "app_label": "app",
+      "model": "notifica"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 11,
+   "fields": {
+      "app_label": "app",
+      "model": "notifica_vista"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 12,
+   "fields": {
+      "app_label": "app",
+      "model": "sshtunnel_configs"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 13,
+   "fields": {
+      "app_label": "app",
+      "model": "statistiche"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 14,
+   "fields": {
+      "app_label": "app",
+      "model": "tag_args"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 15,
+   "fields": {
+      "app_label": "app",
+      "model": "tag_level"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 16,
+   "fields": {
+      "app_label": "app",
+      "model": "user"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 17,
+   "fields": {
+      "app_label": "app",
+      "model": "macchinaattacco"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 18,
+   "fields": {
+      "app_label": "app",
+      "model": "settings_server"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "9kt8mtf4yzsy5dy564j0gd8rgzu54185",
+   "fields": {
+      "session_data": "MjZjMGZkNDI3OTQyZjcyZDcwYmViMjhiOTZlNThjNzhjNzg0NWQ4Mjp7Il9hdXRoX3VzZXJfaWQiOiI3IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYXV0aGVudGljYXRpb24uY3VzdG9tX2F1dGguQ3VzdG9tX0F1dGhfQmFja2VuZCIsIl9hdXRoX3VzZXJfaGFzaCI6IjRhMTNlNDhmN2YyMmI3OGYzNWI5MDgzNzM2ZmY0ZmJlMWE5ZWI0ZGIiLCJ1c2VyX3BrIjo3fQ==",
+      "expire_date": "2021-12-24T13:02:14.089Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "c63wb87cvg1e58w73lh3sfvjzyzdica1",
+   "fields": {
+      "session_data": "NzlmMzU1YWFkZjc3YjQxZGZmMDE4ZDMwN2QxNTNlMzQ0ZGVhYTYwMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYXV0aGVudGljYXRpb24uY3VzdG9tX2F1dGguQ3VzdG9tX0F1dGhfQmFja2VuZCIsIl9hdXRoX3VzZXJfaGFzaCI6ImMwYmNiMDhiYWNiMDFiOWZmODMyYTMzMzM5ZDJjMzNmMzU2MDAxMDIiLCJ1c2VyX3BrIjoxfQ==",
+      "expire_date": "2021-12-24T10:33:49.496Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "hs3ld31cw6pm4f2gjzbd1su2j06eh4n8",
+   "fields": {
+      "session_data": "NWYwMmMxNDdiOWI0Y2Y1ZjQwYWUwNjAyNmE2NjI3YmU3NGY0Y2EzNzp7fQ==",
+      "expire_date": "2021-11-26T15:17:17.571Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "q8yt8r8rjh3wdlw4nsgknplhbod1sb0w",
+   "fields": {
+      "session_data": "MjA0NTY0MTQxMzI1YjkxODU4MTRmODIyMjEwZDBjZjVlZjA2MjA4MTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIzNjExMDUwNjNjOTU4MjUyYmE5MWY2MzcyZTY4NzRlNzUyNDg5ZmE2IiwidXNlcl9wayI6MH0=",
+      "expire_date": "2021-12-24T17:55:08.909Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "s03f0s6q4gcuftj1dicy6phlts95tf6c",
+   "fields": {
+      "session_data": "MmQ4NmU0ZGFjYWVhYTNiZmYyMWQ0YzgzM2RjN2RkNDA3ODQzZGVjYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYXV0aGVudGljYXRpb24uY3VzdG9tX2F1dGguQ3VzdG9tX0F1dGhfQmFja2VuZCIsIl9hdXRoX3VzZXJfaGFzaCI6ImQyYjFhNmZhYmM0M2U1MzhjMWU4OTNmOWZlN2E4NThhMjFkYzZkNDEiLCJ1c2VyX3BrIjoxLCJsYWJpZF8xX3VzZXJpZF8xX2R1cmF0YSI6MzYwMH0=",
+      "expire_date": "2021-11-26T15:54:21.013Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "wjmdocrpta8hy2r8mihicstytykmyrah",
+   "fields": {
+      "session_data": "NDE2MzM0NGQ0NDFlZDRiYzVhZTA3MjhlYjg1YmVmZTRlZTI5ZDNkYjp7Il9hdXRoX3VzZXJfaWQiOiI5IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiYXV0aGVudGljYXRpb24uY3VzdG9tX2F1dGguQ3VzdG9tX0F1dGhfQmFja2VuZCIsIl9hdXRoX3VzZXJfaGFzaCI6IjBmMzUyYTk0OTg5YzAxNjAyMGI1OGRlZDc3NDI3M2JlZmQ5NWY5YTkiLCJ1c2VyX3BrIjo5fQ==",
+      "expire_date": "2021-12-24T15:23:48.947Z"
+   }
+},
+{
+   "model": "app.notifica",
+   "pk": 1,
+   "fields": {
+      "testo": "Laboratorio lab1 Avviato!",
+      "link": "#",
+      "destinatario": "1"
+   }
+},
+{
+   "model": "app.notifica",
+   "pk": 2,
+   "fields": {
+      "testo": "Laboratorio lab1 Stoppato!",
+      "link": "#",
+      "destinatario": "1"
+   }
+},
+{
+   "model": "app.notifica",
+   "pk": 9,
+   "fields": {
+      "testo": "Il tuo profilo \u00e8 stato aggiunto anche su CTFd",
+      "link": "page-user.html",
+      "destinatario": "3"
+   }
+},
+{
+   "model": "app.notifica",
+   "pk": 10,
+   "fields": {
+      "testo": "Il tuo profilo \u00e8 stato aggiunto anche su CTFd",
+      "link": "page-user.html",
+      "destinatario": "4"
+   }
+},
+{
+   "model": "app.notifica",
+   "pk": 14,
+   "fields": {
+      "testo": "Laboratorio Ftp Anonymous Avviato!",
+      "link": "#",
+      "destinatario": "1"
+   }
+},
+{
+   "model": "app.notifica",
+   "pk": 15,
+   "fields": {
+      "testo": "Laboratorio Ftp Anonymous Avviato!",
+      "link": "#",
+      "destinatario": "8"
+   }
+},
+{
+   "model": "app.notifica",
+   "pk": 16,
+   "fields": {
+      "testo": "Laboratorio Ftp Anonymous Stoppato!",
+      "link": "#",
+      "destinatario": "8"
+   }
+},
+{
+   "model": "app.notifica",
+   "pk": 17,
+   "fields": {
+      "testo": "Laboratorio Ftp Anonymous Avviato!",
+      "link": "#",
+      "destinatario": "8"
+   }
+},
+{
+   "model": "app.notifica",
+   "pk": 18,
+   "fields": {
+      "testo": "Il tuo profilo \u00e8 stato aggiunto anche su CTFd",
+      "link": "page-user.html",
+      "destinatario": "1"
+   }
+},
+{
+   "model": "app.notifica",
+   "pk": 19,
+   "fields": {
+      "testo": "Il tuo profilo \u00e8 stato aggiunto anche su CTFd",
+      "link": "page-user.html",
+      "destinatario": "9"
+   }
+},
+{
+   "model": "app.user",
+   "pk": 1,
+   "fields": {
+      "last_login": "2021-12-10T17:51:52.080Z",
+      "nome": "test",
+      "cognome": "test",
+      "username": "test",
+      "password": "pbkdf2_sha256$120000$Hxpya9MU02tI$VF6B6jYqqJB0wpyZPEi1igIOfShmwmx8Mw2S1sxtpjs=",
+      "professione": "test",
+      "email": "test@test.it",
+      "data": "2021-11-12T15:16:55.890Z",
+      "porta_vpn": "35730",
+      "porta_ssh": "50462",
+      "id_ctfd": "2",
+      "pwd_ctfd": "fZkqBOM6Hp",
+      "ssh_psw": "kV6fnhazJcYQSCIlSTbng3EHZNtXvXKCldIsAUlgyIZjXF1Mc4RQYWTHLAG2YB3RphgvtITFZFjDrEqeijDVzFTrN5U2L8zecjplBngwWakdOn8C3xnpLNJ",
+      "ssh_pub_user": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCd8FEp9xsHTtjqow5mVLgDTh7V1w3yug47auzxop4jvnFzD5O4vm6qWCkxDuRqba/x9ULTuiUuX/Cx+OyzFdnyyxMedcENfRZvM1IZrkx1W1RpRAEbBq5zKLb4bLr0czGY81Fopq50o+oSaRiHpaZfCH3may4x97Kfcii+fHJdCj8l1yKEA7GT5EM4wjRwm+WO0TO0kRhE/5ra+3jLUi2yvC/nDPS9ksaSlz1nKFrIh3b+IpUElximl9FxsDypM3/xoghYM+GCvlnJ3zURq43fXWFuTyrcJ0nV9Gqrn/mQgVkBj+GGVgxJvxCFuIIAp7i5mPdZzSVsGANE0FPqHEEP AWS_Key",
+      "is_superuser": false,
+      "is_admin": false
+   }
+},
+{
+   "model": "app.user",
+   "pk": 2,
+   "fields": {
+      "last_login": "2021-11-26T21:26:56.837Z",
+      "nome": "lulu",
+      "cognome": "lulu",
+      "username": "test4",
+      "password": "pbkdf2_sha256$120000$7xhdFe8wwm5W$seKijeweQv39yx28y+mW8WYPdvcVdNT2YqE5KqnvGIo=",
+      "professione": "studente",
+      "email": "test@gmail.com",
+      "data": "2021-11-26T21:26:38.821Z",
+      "porta_vpn": "",
+      "porta_ssh": "",
+      "id_ctfd": "",
+      "pwd_ctfd": "",
+      "ssh_psw": "",
+      "ssh_pub_user": "JieDSFyplfVx",
+      "is_superuser": false,
+      "is_admin": false
+   }
+},
+{
+   "model": "app.user",
+   "pk": 3,
+   "fields": {
+      "last_login": "2021-12-02T11:54:17.686Z",
+      "nome": "lulu",
+      "cognome": "delu",
+      "username": "lulu",
+      "password": "pbkdf2_sha256$120000$ovF6esTyBclp$v/kMl+oAVhAqQ07c1mCZSAlPLXib+/vaWhe4YfMKPV4=",
+      "professione": "stud",
+      "email": "ludos@gmail.com",
+      "data": "2021-12-02T11:54:11.006Z",
+      "porta_vpn": "",
+      "porta_ssh": "",
+      "id_ctfd": "40",
+      "pwd_ctfd": "L0NSi8pNxJ",
+      "ssh_psw": "",
+      "ssh_pub_user": "HAKZQoBl7GYz",
+      "is_superuser": false,
+      "is_admin": false
+   }
+},
+{
+   "model": "app.user",
+   "pk": 4,
+   "fields": {
+      "last_login": "2021-12-02T12:03:54.034Z",
+      "nome": "gtt",
+      "cognome": "ssw",
+      "username": "hhhu",
+      "password": "pbkdf2_sha256$120000$enG8ADHBKLiN$ge8kxrskL0iDiE/0ChYs5G4o//Ie7h0rtWHAijriCcE=",
+      "professione": "ujuj",
+      "email": "drf@juju.com",
+      "data": "2021-12-02T12:03:38.366Z",
+      "porta_vpn": "",
+      "porta_ssh": "",
+      "id_ctfd": "41",
+      "pwd_ctfd": "FfDkK0rEiV",
+      "ssh_psw": "GZk5qdOZ32BC",
+      "ssh_pub_user": "",
+      "is_superuser": false,
+      "is_admin": false
+   }
+},
+{
+   "model": "app.user",
+   "pk": 5,
+   "fields": {
+      "last_login": "2021-12-02T12:08:25.386Z",
+      "nome": "ndkj",
+      "cognome": "njcs",
+      "username": "dka",
+      "password": "pbkdf2_sha256$120000$IVxDsQYa5AUJ$JonB2xy7VLfkl1tsDFJonpbwcmVuGd0M3g5YA6moelk=",
+      "professione": "snajx",
+      "email": "xnal@gmail.com",
+      "data": "2021-12-02T12:08:10.097Z",
+      "porta_vpn": "",
+      "porta_ssh": "58759",
+      "id_ctfd": "42",
+      "pwd_ctfd": "gMU1Y1fZae",
+      "ssh_psw": "37ZEvXa6jXfOxzNCs8ypzIePkY0W1fjEzdJs3YjFjce5DeXJGSBGMiSlkjBqqlYO9td8GFZ32OgVmpqpcyvtnnnySoPk7MVI6T2bbxkuQTXWw8PHEIPHMiL",
+      "ssh_pub_user": "fdds",
+      "is_superuser": false,
+      "is_admin": false
+   }
+},
+{
+   "model": "app.user",
+   "pk": 6,
+   "fields": {
+      "last_login": "2021-12-10T13:00:49.403Z",
+      "nome": "testt",
+      "cognome": "testt",
+      "username": "testt",
+      "password": "pbkdf2_sha256$120000$HaNXXUkNhmor$sVzj6Gk9UUironTjPJcH1rgTimJyImQ6zdR6jK7kLMU=",
+      "professione": "pippo",
+      "email": "testt@gmail.com",
+      "data": "2021-12-10T13:00:42.725Z",
+      "porta_vpn": "",
+      "porta_ssh": "",
+      "id_ctfd": "",
+      "pwd_ctfd": "",
+      "ssh_psw": "PnA2uvxrHunAqmNEDgqdcm1MTBIToKaytAVGVxH7ALNGqMsYOG0nYALRp0vCOG3eqG5ybb6c29E1W3pxaViQhB6VFgxM2FcMJyemaKBvaPGELnheVtByBw6",
+      "ssh_pub_user": "",
+      "is_superuser": false,
+      "is_admin": false
+   }
+},
+{
+   "model": "app.user",
+   "pk": 7,
+   "fields": {
+      "last_login": "2021-12-10T13:02:14.074Z",
+      "nome": "luluu",
+      "cognome": "luluu",
+      "username": "luluuu",
+      "password": "pbkdf2_sha256$120000$hVAbxP20EEtv$W6wxon+LwT3GL9/WaGlFJQ+1y0fRmYVX7EfVZ5Gcm3A=",
+      "professione": "pippo",
+      "email": "lulu@gmail.com",
+      "data": "2021-12-10T13:02:00.895Z",
+      "porta_vpn": "",
+      "porta_ssh": "",
+      "id_ctfd": "",
+      "pwd_ctfd": "",
+      "ssh_psw": "PnA2uvxrHunAqmNEDgqdcm1MTBIToKaytAVGVxH7ALNGqMsYOG0nYALRp0vCOG3eqG5ybb6c29E1W3pxaViQhB6VFgxM2FcMJyemaKBvaPGELnheVtByBw6",
+      "ssh_pub_user": "",
+      "is_superuser": false,
+      "is_admin": false
+   }
+},
+{
+   "model": "app.user",
+   "pk": 8,
+   "fields": {
+      "last_login": "2021-12-10T13:03:32.538Z",
+      "nome": "ludi",
+      "cognome": "lulu",
+      "username": "ludi",
+      "password": "pbkdf2_sha256$120000$ISLMOU8ztJYC$CFQgEMw8l7j8ybUJ6IkYKjXU812pXmMyJNWhRAaCfzY=",
+      "professione": "lulu",
+      "email": "ludi@gmail.com",
+      "data": "2021-12-10T13:03:23.303Z",
+      "porta_vpn": "",
+      "porta_ssh": "53503",
+      "id_ctfd": "",
+      "pwd_ctfd": "",
+      "ssh_psw": "PnA2uvxrHunAqmNEDgqdcm1MTBIToKaytAVGVxH7ALNGqMsYOG0nYALRp0vCOG3eqG5ybb6c29E1W3pxaViQhB6VFgxM2FcMJyemaKBvaPGELnheVtByBw6",
+      "ssh_pub_user": "",
+      "is_superuser": false,
+      "is_admin": false
+   }
+},
+{
+   "model": "app.user",
+   "pk": 9,
+   "fields": {
+      "last_login": "2021-12-10T15:23:48.936Z",
+      "nome": "Utente1",
+      "cognome": "Utente1",
+      "username": "utente1",
+      "password": "pbkdf2_sha256$120000$n7C2Kdmrk50n$Uh4DRooWzJeB6ERqiysktMqXfw+KwB7eT4O67XuS4jo=",
+      "professione": "studente",
+      "email": "utente1@acn.com",
+      "data": "2021-12-10T15:23:39.521Z",
+      "porta_vpn": "",
+      "porta_ssh": "",
+      "id_ctfd": "3",
+      "pwd_ctfd": "bkGFLOZ9HG",
+      "ssh_psw": "wsGLJnQzO8ez2YhRbuEywWp3hCYJ1iFLHYvf833xriKGiOlgU0c3kGQyeXhDDyzA2w0xyB9b9YGM4iAt5JMWwme72V2Os89Iex7aKoheRtESG53my20IUOy",
+      "ssh_pub_user": "",
+      "is_superuser": false,
+      "is_admin": false
+   }
+},
+{
+   "model": "app.statistiche",
+   "pk": 1,
+   "fields": {
+      "lab_avviati": 2,
+      "flag_trovate": 0,
+      "guide_lette": 0,
+      "punteggio": 0,
+      "user_id": 1
+   }
+},
+{
+   "model": "app.statistiche",
+   "pk": 2,
+   "fields": {
+      "lab_avviati": 0,
+      "flag_trovate": 0,
+      "guide_lette": 0,
+      "punteggio": 0,
+      "user_id": 3
+   }
+},
+{
+   "model": "app.statistiche",
+   "pk": 3,
+   "fields": {
+      "lab_avviati": 0,
+      "flag_trovate": 0,
+      "guide_lette": 0,
+      "punteggio": 0,
+      "user_id": 5
+   }
+},
+{
+   "model": "app.statistiche",
+   "pk": 4,
+   "fields": {
+      "lab_avviati": 2,
+      "flag_trovate": 0,
+      "guide_lette": 0,
+      "punteggio": 0,
+      "user_id": 8
+   }
+},
+{
+   "model": "app.statistiche",
+   "pk": 5,
+   "fields": {
+      "lab_avviati": 0,
+      "flag_trovate": 0,
+      "guide_lette": 0,
+      "punteggio": 0,
+      "user_id": 9
+   }
+},
+{
+   "model": "app.tag_args",
+   "pk": 1,
+   "fields": {
+      "colore": "#DCB50A",
+      "argomento": "test",
+      "spiegazione": "test"
+   }
+},
+{
+   "model": "app.tag_level",
+   "pk": 1,
+   "fields": {
+      "colore": "DCB50A",
+      "livello": "test"
+   }
+},
+{
+   "model": "app.ctfd_configs",
+   "pk": 1,
+   "fields": {
+      "url_API": "http://54.211.104.229",
+      "token_API": "7469cece9a5b93cc11266ba62cd1ee201d8bc217e1717b690ea6e817bc093120",
+      "port_API": 9000
+   }
+},
+{
+   "model": "app.sshtunnel_configs",
+   "pk": 1,
+   "fields": {
+      "FULL_PATH_SSH_KEY": "/home/ubuntu/.ssh/id_rsa",
+      "USER_SERVER": "docker",
+      "DNS_NAME_SERVER": "134.122.59.226"
+   }
+},
+{
+   "model": "app.sshtunnel_configs",
+   "pk": 2,
+   "fields": {
+      "FULL_PATH_SSH_KEY": "/home/ubuntu/.ssh/id_rsa",
+      "USER_SERVER": "docker",
+      "DNS_NAME_SERVER": "134.122.59.239"
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 1,
+   "fields": {
+      "nome": "lab1",
+      "sotto_titolo": "test",
+      "docker_name": "httpd:latest",
+      "descrizione": "test",
+      "documentazione": "test",
+      "flag": "test",
+      "categoria": "test",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 3600,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 2,
+   "fields": {
+      "nome": "Ftp Anonymous",
+      "sotto_titolo": "Ftp Anonymous",
+      "docker_name": "cyberhack2021pw4/massimo_vulnerable_docker_ftp_anonymous",
+      "descrizione": "Coming soon",
+      "documentazione": "Coming soon",
+      "flag": "abcdefg",
+      "categoria": "Livello 2",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 3600,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 3,
+   "fields": {
+      "nome": "Reverse Shell",
+      "sotto_titolo": "Reverse Shell",
+      "docker_name": "cyberhack2021pw4/ftp_anonymous_reverse_shel:latest",
+      "descrizione": "Coming soon",
+      "documentazione": "Coming soon",
+      "flag": "abcedf",
+      "categoria": "Livello 3",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 3600,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 4,
+   "fields": {
+      "nome": "massimo_vulnerable_docker_php_7",
+      "sotto_titolo": "Test",
+      "docker_name": "cyberhack2021pw4/massimo_vulnerable_docker_php_7:latest",
+      "descrizione": "todo",
+      "documentazione": "todo",
+      "flag": "todo",
+      "categoria": "todo",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 3600,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 5,
+   "fields": {
+      "nome": "massimo_vulnerable_docker_smtp",
+      "sotto_titolo": "Test",
+      "docker_name": "cyberhack2021pw4/massimo_vulnerable_docker_smtp:latest",
+      "descrizione": "todo",
+      "documentazione": "todo",
+      "flag": "todo",
+      "categoria": "todo",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 3600,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 6,
+   "fields": {
+      "nome": "massimo_vulnerable_docker_apache_2_4_49",
+      "sotto_titolo": "Test",
+      "docker_name": "cyberhack2021pw4/massimo_vulnerable_docker_apache_2_4_49:latest",
+      "descrizione": "todo",
+      "documentazione": "todo",
+      "flag": "todo",
+      "categoria": "todo",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 3600,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 7,
+   "fields": {
+      "nome": "sqlinject",
+      "sotto_titolo": "todo",
+      "docker_name": "cyberhack2021pw4/sqlinject:latest",
+      "descrizione": "todo",
+      "documentazione": "todo",
+      "flag": "todo",
+      "categoria": "todo",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 3600,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 8,
+   "fields": {
+      "nome": "nmap_webserver",
+      "sotto_titolo": "todo",
+      "docker_name": "cyberhack2021pw4/nmap_webserver:latest",
+      "descrizione": "todo",
+      "documentazione": "todo",
+      "flag": "todo",
+      "categoria": "todo",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 3600,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 9,
+   "fields": {
+      "nome": "ftp_anonymoys_login",
+      "sotto_titolo": "todo",
+      "docker_name": "cyberhack2021pw4/ftp_anonymoys_login:latest",
+      "descrizione": "todo",
+      "documentazione": "todo",
+      "flag": "todo",
+      "categoria": "todo",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 3600,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.cyberkillchain",
+   "pk": 1,
+   "fields": {
+      "intro": "La cyber kill chain , inizialmente sviluppata da Lockheed Martin a scopo militare, \u00e8  un modello di infrastruttura di sicurezza implementato  per identificare e prevedere le fasi di un attacco informatico. Il modello della catena di uccisione descrive un attacco di un utente malintenzionato esterno che tenta di accedere a dati o risorse all'interno del perimetro di sicurezza L\u2019analisi della cyber kill chain funge da guida per gli analisti per capire quali azioni possono essere utili per l\u2019azione difensiva. Il modello fornisce sette fasi:",
+      "recon": "Il primo stadio della catena del cyber kill \u00e8 la ricognizione.\u202fIn questa fase, l\u2019attaccante raccoglie informazioni sul bersaglio. Gli aggressori cercheranno di identificare e indagare sui sistemi di sicurezza esistenti, quali firewall, sistemi di prevenzione delle intrusioni e meccanismi di autenticazione. La raccolta di informazioni pu\u00f2 avvenire in maniera attiva, prevedendo ad esempio la scansione delle porte, o in maniera passiva",
+      "weapon": "Il secondo stadio della catena di cyber kill \u00e8 la weaponization durante la quale l'attore delle minacce sviluppa malware appositamente progettato per le vulnerabilit\u00e0 scoperte durante la fase di ricognizione della catena di cyber kill\u202fGli aggressori comunemente iniettano malware in un sistema per ottenere un punto d'appoggio.\u202fIl malware potrebbe essere distribuito tramite e-mail, un sistema o un account compromesso, un \"\"open door\"\" che rappresenta una lacuna nella sicurezza, come una porta aperta o un endpoint non protetto, o un complice interno.",
+      "delivery": "Il terzo stadio della catena di cyber kill, la consegna, prevede la trasmissione del codice APT dall'attaccante al sistema informativo di destinazione per lo sfruttamento.\u202fSulla base delle ricerche e delle analisi attuali del\u202fVerizon Data Breach Investigation Report 2018\u202f, \u00e8 molto probabile che un attacco alla rete abbia origine da un attacco di spear-phishing contro un dipendente interno dell'organizzazione.",
+      "exploitation": "Durante la fase di sfruttamento, il codice malware APT viene eseguito sulla rete di destinazione tramite meccanismi remoti o locali, sfruttando le vulnerabilit\u00e0 rilevate per ottenere l'accesso da superutente al sistema informativo aziendale mirato.",
+      "installation": "Una volta che lo sfruttamento del sistema ha avuto successo, il codice malware APT si installer\u00e0 automaticamente sul sistema informativo mirato.\u202fA questo punto, il malware APT inizier\u00e0 a scaricare software aggiuntivo se \u00e8 disponibile l'accesso alla rete.\u202fCi\u00f2 consente payload di rimanere piccolo e non rilevabile. Le dimensioni ridotte del malware in questo esempio avrebbero funzionalit\u00e0 limitate.\u202fPertanto, l'APT scaricher\u00e0 componenti aggiuntivi per avere un migliore controllo dei sistemi informativi sfruttati e penetrare ulteriormente nella rete dell'organizzazione target.",
+      "command_and_control": "Il command e il control \u00e8 la sesta fase della catena cyber kill, noto anche come C2, avviene quando l'attaccante ha messo in atto il proprio codice APT di gestione e comunicazione sulla rete di destinazione.\u202fQuesto software consente all'attaccante di gestire completamente il codice APT nell'ambiente e consente all'aggressore di spostarsi pi\u00f9 in profondit\u00e0 nella rete, esfiltrare i dati e condurre operazioni di distruzione o negazione del servizio.",
+      "exfiltration": "Le azioni e gli obiettivi dell'APT dipendono dalla sua missione specifica.\u202fL'APT potrebbe essere focalizzato sull'esfiltrazione dei dati, sulla negazione del servizio o sulla distruzione. Gli aggressori troveranno un meccanismo, in genere una sorta di tunneling del protocollo, per copiare i dati all'esterno dell'organizzazione, al fine di vendere i dati sensibili, utilizzarli per ulteriori attacchi (ad esempio, nel caso di dati personali dei clienti o dettagli di pagamento), o distribuirlo apertamente per danneggiare l'organizzazione."
+   }
+},
+{
+   "model": "app.macchinaattacco",
+   "pk": 1,
+   "fields": {
+      "nome": "Kali",
+      "docker_name": "cyberhack2021pw4/kali:latest",
+      "descrizione": "Docker Kali Predefinito",
+      "username": "root",
+      "timer_ma": 3600
+   }
+},
+{
+   "model": "auth.user",
+   "pk": 1,
+   "fields": {
+      "password": "pbkdf2_sha256$120000$T3Zjv6k0nFMu$pEEji7dfAd3i3uqRrHBtd9cl4eNASyon37IZDw0I5FQ=",
+      "last_login": "2021-12-10T17:55:08.904Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@admin.it",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-11-12T15:08:35.873Z",
+      "groups": [],
+      "user_permissions": []
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 1,
+   "fields": {
+      "action_time": "2021-11-12T15:11:08.817Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Cyber Kill Chain Spiegazione",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 2,
+   "fields": {
+      "action_time": "2021-11-12T15:14:17.384Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "CTFd_configs object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 3,
+   "fields": {
+      "action_time": "2021-11-12T15:15:31.820Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "SSHTunnel_configs object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 4,
+   "fields": {
+      "action_time": "2021-11-12T15:49:40.418Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "1",
+      "object_repr": "test",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 5,
+   "fields": {
+      "action_time": "2021-11-12T15:49:52.716Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "2",
+      "object_repr": "r",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 6,
+   "fields": {
+      "action_time": "2021-11-12T15:50:00.308Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "2",
+      "object_repr": "r",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 7,
+   "fields": {
+      "action_time": "2021-11-12T15:50:49.898Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "lab1 - httpd:latest",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 8,
+   "fields": {
+      "action_time": "2021-11-12T15:51:01.851Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "1",
+      "object_repr": "test",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 9,
+   "fields": {
+      "action_time": "2021-11-26T11:51:00.273Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "1",
+      "object_repr": "MacchinaAttacco object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 10,
+   "fields": {
+      "action_time": "2021-11-26T12:23:51.462Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "1",
+      "object_repr": "MacchinaAttacco object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"timer_ma\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 11,
+   "fields": {
+      "action_time": "2021-11-26T12:26:23.129Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "SSHTunnel_configs object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"FULL_PATH_SSH_KEY\", \"USER_SERVER\", \"DNS_NAME_SERVER\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 12,
+   "fields": {
+      "action_time": "2021-11-26T21:05:24.055Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "CTFd_configs object (1)",
+      "action_flag": 2,
+      "change_message": "[]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 13,
+   "fields": {
+      "action_time": "2021-11-26T21:05:42.711Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "SSHTunnel_configs object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"DNS_NAME_SERVER\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 14,
+   "fields": {
+      "action_time": "2021-11-26T21:05:47.557Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "SSHTunnel_configs object (1)",
+      "action_flag": 2,
+      "change_message": "[]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 15,
+   "fields": {
+      "action_time": "2021-11-26T21:06:31.385Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "SSHTunnel_configs object (1)",
+      "action_flag": 2,
+      "change_message": "[]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 16,
+   "fields": {
+      "action_time": "2021-11-26T21:07:14.738Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "CTFd_configs object (1)",
+      "action_flag": 2,
+      "change_message": "[]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 17,
+   "fields": {
+      "action_time": "2021-11-26T21:07:24.424Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "1",
+      "object_repr": "MacchinaAttacco object (1)",
+      "action_flag": 2,
+      "change_message": "[]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 18,
+   "fields": {
+      "action_time": "2021-11-26T21:09:39.042Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "SSHTunnel_configs object (1)",
+      "action_flag": 2,
+      "change_message": "[]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 19,
+   "fields": {
+      "action_time": "2021-11-26T21:10:05.945Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "1",
+      "object_repr": "MacchinaAttacco object (1)",
+      "action_flag": 2,
+      "change_message": "[]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 20,
+   "fields": {
+      "action_time": "2021-11-26T21:14:13.810Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "2",
+      "object_repr": "SSHTunnel_configs object (2)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 21,
+   "fields": {
+      "action_time": "2021-11-26T21:14:26.499Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "2",
+      "object_repr": "SSHTunnel_configs object (2)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"USER_SERVER\", \"DNS_NAME_SERVER\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 22,
+   "fields": {
+      "action_time": "2021-11-26T21:14:33.113Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "SSHTunnel_configs object (1)",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 23,
+   "fields": {
+      "action_time": "2021-11-26T21:14:36.065Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "2",
+      "object_repr": "SSHTunnel_configs object (2)",
+      "action_flag": 2,
+      "change_message": "[]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 24,
+   "fields": {
+      "action_time": "2021-11-26T21:15:38.653Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "1",
+      "object_repr": "MacchinaAttacco object (1)",
+      "action_flag": 2,
+      "change_message": "[]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 25,
+   "fields": {
+      "action_time": "2021-11-26T21:16:53.777Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "2",
+      "object_repr": "SSHTunnel_configs object (2)",
+      "action_flag": 2,
+      "change_message": "[]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 26,
+   "fields": {
+      "action_time": "2021-11-26T21:17:48.903Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "2",
+      "object_repr": "SSHTunnel_configs object (2)",
+      "action_flag": 2,
+      "change_message": "[]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 27,
+   "fields": {
+      "action_time": "2021-11-26T21:32:59.169Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "CTFd_configs object (1)",
+      "action_flag": 2,
+      "change_message": "[]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 28,
+   "fields": {
+      "action_time": "2021-11-26T21:33:08.209Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "1",
+      "object_repr": "MacchinaAttacco object (1)",
+      "action_flag": 2,
+      "change_message": "[]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 29,
+   "fields": {
+      "action_time": "2021-11-26T21:33:17.728Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "lab1 - httpd:latest",
+      "action_flag": 2,
+      "change_message": "[]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 30,
+   "fields": {
+      "action_time": "2021-11-29T11:43:05.006Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "1",
+      "object_repr": "MacchinaAttacco object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"timer_ma\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 31,
+   "fields": {
+      "action_time": "2021-11-30T22:48:45.830Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "1",
+      "object_repr": "MacchinaAttacco object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"timer_ma\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 32,
+   "fields": {
+      "action_time": "2021-12-10T10:00:49.510Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "CTFd_configs object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"token_API\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 33,
+   "fields": {
+      "action_time": "2021-12-10T10:01:36.579Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Nmap - cyberhack2021pw4/nmap_webserver",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"nome\", \"sotto_titolo\", \"docker_name\", \"descrizione\", \"documentazione\", \"flag\", \"categoria\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 34,
+   "fields": {
+      "action_time": "2021-12-10T10:02:51.966Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Ftp Anonymous - cyberhack2021pw4/massimo_vulnerable_docker_ftp_anonymous",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 35,
+   "fields": {
+      "action_time": "2021-12-10T10:03:35.838Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "Reverse Shell - cyberhack2021pw4/ftp_anonymous_reverse_shel",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 36,
+   "fields": {
+      "action_time": "2021-12-10T12:48:05.079Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "2",
+      "object_repr": "SSHTunnel_configs object (2)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"FULL_PATH_SSH_KEY\", \"DNS_NAME_SERVER\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 37,
+   "fields": {
+      "action_time": "2021-12-10T12:48:30.269Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "SSHTunnel_configs object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"FULL_PATH_SSH_KEY\", \"USER_SERVER\", \"DNS_NAME_SERVER\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 38,
+   "fields": {
+      "action_time": "2021-12-10T12:48:48.719Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "SSHTunnel_configs object (1)",
+      "action_flag": 2,
+      "change_message": "[]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 39,
+   "fields": {
+      "action_time": "2021-12-10T12:49:01.126Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "2",
+      "object_repr": "SSHTunnel_configs object (2)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"DNS_NAME_SERVER\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 40,
+   "fields": {
+      "action_time": "2021-12-10T12:52:21.669Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "1",
+      "object_repr": "MacchinaAttacco object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"timer_ma\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 41,
+   "fields": {
+      "action_time": "2021-12-10T15:17:18.152Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "CTFd_configs object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"url_API\", \"token_API\", \"port_API\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 42,
+   "fields": {
+      "action_time": "2021-12-10T15:17:26.906Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "CTFd_configs object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"url_API\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 43,
+   "fields": {
+      "action_time": "2021-12-10T17:59:28.702Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Cyber Kill Chain Spiegazione",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"intro\", \"recon\", \"weapon\", \"delivery\", \"exploitation\", \"installation\", \"command_and_control\", \"exfiltration\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 44,
+   "fields": {
+      "action_time": "2021-12-10T18:03:22.100Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "massimo_vulnerable_docker_php_7 - cyberhack2021pw4/massimo_vulnerable_docker_php_7:latest",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 45,
+   "fields": {
+      "action_time": "2021-12-10T18:04:09.623Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "5",
+      "object_repr": "massimo_vulnerable_docker_smtp - cyberhack2021pw4/massimo_vulnerable_docker_smtp:latest",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 46,
+   "fields": {
+      "action_time": "2021-12-10T18:04:45.162Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "6",
+      "object_repr": "massimo_vulnerable_docker_apache_2_4_49 - cyberhack2021pw4/massimo_vulnerable_docker_apache_2_4_49:latest",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 47,
+   "fields": {
+      "action_time": "2021-12-10T18:05:29.804Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "Reverse Shell - cyberhack2021pw4/ftp_anonymous_reverse_shel:latest",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"docker_name\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 48,
+   "fields": {
+      "action_time": "2021-12-10T18:06:25.258Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "7",
+      "object_repr": "sqlinject - cyberhack2021pw4/sqlinject:latest",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 49,
+   "fields": {
+      "action_time": "2021-12-10T18:06:55.716Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "8",
+      "object_repr": "nmap_webserver - cyberhack2021pw4/nmap_webserver:latest",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 50,
+   "fields": {
+      "action_time": "2021-12-10T18:07:27.171Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "9",
+      "object_repr": "ftp_anonymoys_login - cyberhack2021pw4/ftp_anonymoys_login:latest",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+}
+]

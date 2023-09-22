@@ -1,0 +1,162 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Tables {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<br />
+<style>
+  .success {
+    background-color: rgb(57, 245, 82)
+  }
+
+  .fail {
+    background-color: rgb(250, 73, 73)
+  }
+</style>
+<div class="row">
+  <div class="col-md-10">
+    <h2>Gestione Server</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <div class="row justify-content-between">
+          <div class="col">
+            <h2>Setup Docker Swarm:</h2>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Step 1:</h3>
+          <h4>Collegarsi al manager/worker con l'utente ssh <code>docker</code><br>
+            Avviare un cluster di docker swarm.<br>
+            Sul manager andrà eseguito il comand <br>
+            <code>docker swarm init</code>
+
+          </h4>
+          <h3>Step 2:</h3>
+          <h4>Inserire nel manager la seguente chiave SSH:</h4>
+          <h4 id="ssh_key_pub"><code>{{chiave_ssh_pub}}</code></h4>
+          <h4>In alternativa, se le chiavi ssh sono inserite nella dashboard, è possibile usare i pulsanti nella sezione succesiva.</h4>
+          <h3>Step 3:</h3>
+          <h4>Dalla dashboard configurare:
+            <ul>
+              <li>una macchina di attacco</li>
+              <li>una istanza di CTFd</li>
+              <li>una istanza di webSSH<br><a href="https://github.com/huashengdun/webssh">https://github.com/huashengdun/webssh</a><br><code>python3 run.py --debug=true --encoding="utf-8" --fbidhttp=false --hostfile="/dev/null" --origin='*' --policy=autoadd --redirect=false --syshostfile="/dev/null" --port=8888 --address=0.0.0.0</code></li>
+            </ul>
+          </h4>
+          <h3>Step 4:</h3>
+          <h4>Per poter utilizzare il terminale web, avviare una istanza di webssh.</h4>
+        </div>
+        <a class="btn btn-primary" type="submit" name='avviaVPN' value='avviaVPN' href="/start-vpn">
+          Avvia VPN
+        </a>
+        <a class="btn btn-primary" type="submit" name='avviaVPN' value='avviaVPN' href="/stop-vpn">
+          Stoppa VPN
+        </a>
+        </div>
+    </div>
+  </div>
+</div>
+{%for configurazione_ssh in configurazioni_ssh %}
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <div class="row justify-content-between">
+          <div class="col-4">
+            <h2>Status Server:</h2>
+            <h3 class="card-title p-2">{{configurazione_ssh.ip_server}}</h3>
+          </div>
+          <div class="col-4">
+            <h2 class="card-title p-2" id="stato{{configurazione_ssh.ip_server}}">
+            </h2>
+          </div>
+          <div class="col-2 p-0">
+            <div id="colore{{configurazione_ssh.ip_server}}"
+              style="border-radius: 50%; padding: 8px; width: 30px; height: 30px; margin-top: 20px">
+            </div>
+          </div>
+        </div>
+        <div class="card-body" style="width: 70%;">
+          <h4 id="titolo{{configurazione_ssh.ip_server}}"></h4>
+          <p id="output_ssh{{configurazione_ssh.ip_server}}"></p>
+          <h4 id="configurazione{{configurazione_ssh.ip_server}}"></h4>
+        </div>
+
+        <button class="btn btn-primary" type="submit" name='test_connessione' value="{{configurazione_ssh.ip_server}}"
+          onclick="testaConnessione(value,name)">
+          Testa connessione
+        </button>
+        {% csrf_token %}
+
+        <button class="btn btn-primary" type="submit" name='configura_macchina' value="{{configurazione_ssh.ip_server}}"
+          onclick="configura(value,name)">
+          Configura Macchina
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+{%endfor%}
+
+
+
+<script>
+  function testaConnessione(value, name) {
+    fetch("{% url 'test_stato_server'%}", {
+      method: "POST",
+      credentials: "same-origin",
+      headers: {
+        "X-Requested-With": "XMLHttpRequest",
+        "X-CSRFToken": getCookie("csrftoken"),
+      },
+      body: JSON.stringify({ payload: value, "name": name })
+
+    }).then(response => response.json()).then(data => {
+      document.getElementById(`titolo${data["ip_server"]}`).innerHTML = "Carico Macchina:"
+      document.getElementById(`output_ssh${data["ip_server"]}`).innerHTML = data["output_ssh"]
+      document.getElementById(`stato${data["ip_server"]}`).innerHTML = data["stato_server"]
+      let colore = document.getElementById(`colore${data["ip_server"]}`)
+      if (data["colore_stato"])
+        colore.classList.add("success")
+      else
+        colore.classList.add("fail")
+    })
+  };
+
+  function configura(value, name) {
+    fetch("{% url 'test_stato_server'%}", {
+      method: "POST",
+      credentials: "same-origin",
+      headers: {
+        "X-Requested-With": "XMLHttpRequest",
+        "X-CSRFToken": getCookie("csrftoken"),
+      },
+      body: JSON.stringify({ payload: value, "name": name })
+
+    }).then(response => response.json()).then(data => {
+      h4_result = document.getElementById(`configurazione${data["ip_server"]}`)
+      if (data["result"])
+        h4_result.innerHTML = "Macchina configurata correttamente"
+      else
+        h4_result.innerHTML = "Errore nella connessione ssh alla macchina";
+    })
+  }
+</script>
+
+
+{% endblock content %}
+
+
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+{% endblock javascripts %}

@@ -1,0 +1,37 @@
+version: '2'
+
+services:
+   django:
+      restart: always
+      build: .
+      ports:
+         - "8000:8000"
+    
+   ctfd:
+      image: ctfd/ctfd:latest
+      restart: always
+      ports:
+         - "8123:8000"
+      
+   webssh:
+      image: cyberhack2021pw4/webssh:latest
+      restart: always
+      ports:
+         - "8888:8888"
+      
+   nginx:
+      image: nginx:latest
+      volumes:
+         - ./nginx:/etc/nginx/conf.d
+      ports:
+         - 80:80
+      depends_on:
+         - ctfd
+         - django
+         - webssh
+
+
+networks:
+    default:
+    internal:
+        internal: true
