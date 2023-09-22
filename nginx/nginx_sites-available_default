@@ -1,0 +1,19 @@
+server {
+    listen 80;
+    server_name how2hack.it www.how2hack.it tesi.simonestaiano.it simonestaiano.it webserver.tesi.simonestaiano.it;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    #location /static/ {
+    #    root /home/ubuntu/pw2021_gruppo4/staticfiles;
+    #}
+    
+    location / {
+       # proxy_pass http://unix:/run/gunicorn.sock;
+        proxy_pass http://django:8000;
+    }
+
+    location /pippozzo/ {
+       root /usr/share/nginx/html/;
+    }
+
+}

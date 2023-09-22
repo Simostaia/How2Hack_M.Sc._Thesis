@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>How2Hack</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      margin-top: 50px;
+      color: #000000; /* Nero come colore secondario */
+      margin-left: 0; /* Rimuove il margine sinistro */
+    }
+    .header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px;
+    }
+    .logo {
+      max-width: 80px; /* Riduci la larghezza massima del logo */
+      height: auto; /* Mantiene le proporzioni originali */
+      margin-right: 20px; /* Sposta il logo a destra */
+      margin-top: -50px; /* Sposta il logo leggermente più in alto */
+    }
+    .title-container {
+      text-align: center; /* Centra il contenuto orizzontalmente */
+    }
+    .title {
+      font-size: 4em;
+      color: #008000; /* Verde come colore principale */
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Effetto di ombra */
+      margin-bottom: 10px;
+      animation: glitter 2s infinite alternate; /* Aggiungi l'animazione di scintillio */
+    }
+    @keyframes glitter {
+      0% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .subtitle {
+      font-size: 1.5em;
+      color: #666;
+      margin-bottom: 30px;
+    }
+    .link-container {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%; /* Rendi il link-container largo quanto tutta la pagina */
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px; /* Aggiungi uno spazio sopra i pulsanti */
+    }
+    a {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 25px;
+      text-decoration: none;
+      color: #ffffff;
+      border-radius: 5px;
+      background-color: #008000; /* Verde come colore principale */
+      font-size: 16px;
+      transition: background-color 0.3s ease; /* Aggiunto effetto di transizione al cambio di colore */
+    }
+    a:hover {
+      background-color: #000000; /* Cambia il colore in nero al passaggio del mouse */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img class="logo" src="https://www.simonestaiano.it/assets/static/logo_immagine.png" alt="Logo How2Hack">
+  </div>
+
+  <div class="title-container">
+    <h1 class="title">How2Hack</h1>
+    <h2 class="subtitle">M.Sc. Thesis - Simone Staiano</h2>
+  </div>
+
+  <div class="link-container">
+    <div class="button-container">
+      <a href="http://tesi.simonestaiano.it:8000/">How2Hack</a>
+      <a href="http://tesi.simonestaiano.it:8123/">CTFd</a>
+      <a href="http://tesi.simonestaiano.it:8888/">WebSSH</a>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+
+  <!--   Core JS Files   -->
+  <script src="/static/assets/js/core/jquery.min.js"></script>
+  <script src="/static/assets/js/core/popper.min.js"></script>
+  <script src="/static/assets/js/core/bootstrap-material-design.min.js"></script>
+  <script src="/static/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!-- Plugin for the momentJs  -->
+  <script src="/static/assets/js/plugins/moment.min.js"></script>
+  <!--  Plugin for Sweet Alert -->
+  <script src="/static/assets/js/plugins/sweetalert2.js"></script>
+  <!-- Forms Validations Plugin -->
+  <script src="/static/assets/js/plugins/jquery.validate.min.js"></script>
+  <!-- Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
+  <script src="/static/assets/js/plugins/jquery.bootstrap-wizard.js"></script>
+  <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+  <script src="/static/assets/js/plugins/bootstrap-selectpicker.js"></script>
+  <!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+  <script src="/static/assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
+  <!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
+  <script src="/static/assets/js/plugins/jquery.dataTables.min.js"></script>
+  <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+  <script src="/static/assets/js/plugins/bootstrap-tagsinput.js"></script>
+  <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+  <script src="/static/assets/js/plugins/jasny-bootstrap.min.js"></script>
+  <!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
+  <script src="/static/assets/js/plugins/fullcalendar.min.js"></script>
+  <!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
+  <script src="/static/assets/js/plugins/jquery-jvectormap.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="/static/assets/js/plugins/nouislider.min.js"></script>
+  <!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+  <!-- Library for adding dinamically elements -->
+  <script src="/static/assets/js/plugins/arrive.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chartist JS -->
+  <script src="/static/assets/js/plugins/chartist.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="/static/assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="/static/assets/js/material-dashboard.js?v=2.1.1" type="text/javascript"></script>
+  <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+  <script src="/static/assets/demo/demo.js"></script>
+
+  <!-- SendPost -->
+  <script src="/static/assets/js/send_post.js"></script>
+  <!-- Timer Labs-->
+  
+  <script>
+    function aggiorna_notifiche(clicked){
+      var POST_REQUEST = {
+        action: encodeURIComponent("get_notifications"),
+        click: clicked
+      }; 
+  
+      myObj = sendPost(csrftoken, "/core/", POST_REQUEST, function(cb, stat){
+        if(cb == "error"){
+            if(stat == "404"){ //not found
+            document.getElementById("result_notifications").innerHTML = "ERRORE ("+stat+")";
+            }else if(stat == "0"){
+                document.getElementById("result_notifications").innerHTML = "<img src=\"static/assets/img/loading.gif\" style=\"max-width:50px;\">";
+            }else{//altri errori, tipo 500 o 403
+                document.getElementById("result_notifications").innerHTML = "Errore: " + stat;
+            }
+        }else if (typeof cb.error != "undefined"){ //errore custom
+            document.getElementById("result_notifications").innerHTML = "Errore: " + cb.error;
+        }else{
+          
+          if(typeof cb.num_notifiche != "undefined"){
+            if(parseInt(cb.num_notifiche) == 0){
+  
+              console.log("Nessuna nuova notifica!!");
+              $("#result_notifications").html("Nessuna nuova notifica...");
+              $("#num_notifications").html("0");
+              $("#num_notifications").css("display","none");
+            }else{
+              console.log("CI SONO NOTIFICHE PER TE!("+cb.num_notifiche+")");
+              $("#num_notifications").html(""+cb.num_notifiche+"");
+              $("#num_notifications").css("display","inline");
+              console.log("Notifiche->"+cb.notifiche);
+              string_all_not="";
+              console.log("prima"+typeof cb.notifiche);
+              cb.notifiche = JSON.parse(cb.notifiche);
+              console.log("dopo"+typeof cb.notifiche);
+              Object.keys(cb.notifiche).forEach(key => {
+                console.log(cb.notifiche[key]["testo"]); // the value of the current key.
+                string_all_not += '<a class="dropdown-item" href="'+cb.notifiche[key]["link"]+'">'+cb.notifiche[key]["testo"]+'</a>';
+              });
+              $("#result_notifications").html(string_all_not);
+              if (clicked=="si"){
+                $("#num_notifications").html("0");
+                $("#num_notifications").css("display","none");
+              }else{
+                console.log("status notifiche 33")
+              }
+            }
+          }else{
+            console.log("non ci sono nuove notifiche")
+          }
+        }
+      });
+    }
+    $( document ).ready(function() {
+      aggiorna_notifiche("no");
+      $("#navbarDropdownMenuLink").click(function() {
+        if(!($("#result_notifications").hasClass("show"))){
+          aggiorna_notifiche("si");
+        }else{
+          console.log("Già sei visibile, quindi non aggiorno")
+        }
+      });
+    });
+  </script>
+  

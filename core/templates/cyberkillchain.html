@@ -1,0 +1,163 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Tables {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-10">
+    <h2>Cyber Kill Chain<br /></h2><br />
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-10">
+    <br /><br /><br />
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-2">
+    <div>
+      <img src="static/assets/img/reconn.png" style="width:70%; display: inline;" />
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card-header card-header-custom" style="background-color: #5ea318;">
+        <h4 class="card-title" style="color: white; font-weight: 400;">1) Reconnaissance</h4>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive" style="color: #031016;">
+          {{ CyberKillChain.recon|safe }}
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-2">
+    <div>
+      <img src="static/assets/img/weapon.png" style="width:70%; display: inline;" />
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card-header card-header-custom" style="background-color: #5ea318;">
+        <h4 class="card-title" style="color: white; font-weight: 400;">2) Weaponization</h4>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive" style="color: #031016;">
+          {{ CyberKillChain.weapon|safe }}
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-2">
+    <div>
+      <img src="static/assets/img/delivery.png" style="width:70%; display: inline;" />
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card-header card-header-custom" style="background-color: #5ea318;">
+        <h4 class="card-title" style="color: white; font-weight: 400;">3) Delivery</h4>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive" style="color: #031016;">
+          {{ CyberKillChain.delivery|safe }}
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-2">
+    <div>
+      <img src="static/assets/img/exploitation.png" style="width:70%; display: inline;" />
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card-header card-header-custom" style="background-color: #5ea318;">
+        <h4 class="card-title" style="color: white; font-weight: 400;">4) Exploitation</h4>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive" style="color: #031016;">
+          {{ CyberKillChain.exploitation|safe }}
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-2">
+    <div>
+      <img src="static/assets/img/install.png" style="width:70%; display: inline;" />
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card-header card-header-custom" style="background-color: #5ea318;">
+        <h4 class="card-title" style="color: white; font-weight: 400;">5) Installation</h4>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive" style="color: #031016;">
+          {{ CyberKillChain.installation|safe }}
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-2">
+    <div>
+      <img src="static/assets/img/command.png" style="width:70%; display: inline;" />
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card-header card-header-custom" style="background-color: #5ea318;">
+        <h4 class="card-title" style="color: white; font-weight: 400;">6) Command and Control</h4>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive" style="color: #031016;">
+          {{ CyberKillChain.command_and_control|safe }}
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-2">
+    <div>
+      <img src="static/assets/img/exfiltration.png" style="width:70%; display: inline;" />
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card-header card-header-custom" style="background-color: #5ea318;">
+        <h4 class="card-title" style="color: white; font-weight: 400;">7) Exfiltration</h4>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive" style="color: #031016;">
+          {{ CyberKillChain.exfiltration|safe }}
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

@@ -1,0 +1,291 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Page User {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header card-header-tabs card-header-primary" style="background: #5ea318;">
+        <div class="nav-tabs-navigation">
+          <div class="nav-tabs-wrapper">
+            <!-- <span class="nav-tabs-title">Il tuo Profilo:</span> -->
+            <ul class="nav nav-tabs" data-tabs="tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#profile" data-toggle="tab">
+                  Info User
+                  <div class="ripple-container"></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#password" data-toggle="tab">
+                  Cambia Password
+                  <div class="ripple-container"></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ctfd" data-toggle="tab">
+                  Info CTFd
+                  <div class="ripple-container"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="card-header card-header-primary">
+                  <h4 class="card-title">Edit Profile</h4>
+                  <p class="card-category">Complete your profile</p>
+                </div> -->
+      <div class="card-body">
+        <div class="tab-content">
+
+          <div class="tab-pane active" id="profile">
+            <br />
+            <form>
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="form-group">
+                    <label class="bmd-label-floating">UserID</label>
+                    <input type="text" class="form-control" disabled value="{{ user_me.pk }}">
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="form-group">
+                    <label class="bmd-label-floating">Username</label>
+                    <input type="text" class="form-control" value="{{ user_me.username }}">
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="form-group">
+                    <label class="bmd-label-floating">Indirizzo Email</label>
+                    <input type="email" class="form-control" disabled value="{{ user_me.email }}">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="bmd-label-floating">Nome</label>
+                    <input type="text" class="form-control" value="{{ user_me.nome }}" id="nome">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="bmd-label-floating">Cognome</label>
+                    <input type="text" class="form-control" value="{{ user_me.cognome }}" id="cognome">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="bmd-label-floating">Password macchina di attacco</label>
+                    <input type="text" class="form-control" disabled value="{{ user_me.ssh_psw}}" id="ssh_psw">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="bmd-label-floating">Chiave pubblica macchina di attacco</label>
+                    <input type="text" class="form-control" value="{{ user_me.ssh_pub_user}}" id="ssh_pub_user">
+                  </div>
+                </div>
+              </div>
+              <br />
+              <button type="submit" class="btn btn-primary pull-right" onclick="return update_infos();">Aggiorna
+                Informazioni</button>
+              <div class="clearfix"></div>
+            </form>
+          </div>
+          <div class="tab-pane" id="password">
+            <br />
+            <div class="row">
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Password attuale</label>
+                  <input type="password" class="form-control" id="pwd_attuale">
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Nuova password</label>
+                  <input type="password" class="form-control" id="new_pwd">
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Ripeti password</label>
+                  <input type="password" class="form-control" id="r_new_pwd">
+                </div>
+              </div>
+
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primary pull-right" onclick="return update_pwd();">Aggiorna
+              Password</button>
+            <div class="clearfix"></div>
+          </div>
+          <div class="tab-pane" id="ctfd">
+            <br />
+            <div class="row">
+              <div class="col-md-12">La tua Configurazione attuale per la piattaforma CTFd <br />&nbsp;</div>
+              <div class="col-md-2">
+                <div class="form-group">
+                  <label class="bmd-label-floating">UserID (disabled)</label>
+                  <input type="text" class="form-control" disabled value="{{ user_me.id_ctfd }}">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Username</label>
+                  <input type="text" class="form-control" disabled value="{{ user_me.username }}">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Password</label>
+                  <input type="text" class="form-control" disabled value="*" id="pwd_attuale_ctfd">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <a href="#" onclick="$('#insert_forctfd').fadeToggle();">Inserisci</a> la tua password attuale per
+                mostrare quella di CTFd<br /><i>N.B. questa è la password del primo login. Cambiando la password su CTFd, questa sezione non verrà aggiornata.</i>
+                <div id="insert_forctfd" style="display:none;">
+                  <form onsubmit="return forctfd();">
+                    <br />
+                    <div class="form-group">
+                      <label class="bmd-label-floating">Password Attuale</label>
+                      <input type="password" class="form-control" id="pwd_attuale_forctfd">
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary pull-right">Vai</button>
+                    <div id="result_forctfd"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div id="result" style="width: 100%; text-align:center;">
+
+        </div>
+        <br />
+        <div id="timer" style="width: 100%; text-align:center;">
+
+        </div>
+        <script>
+          function forctfd() {
+
+            var myObj;
+
+            var POST_REQUEST = {
+              action: encodeURIComponent("checkpwd_forctfd"),
+              pwd: encodeURIComponent(document.getElementById("pwd_attuale_forctfd").value)
+            };
+
+            myObj = sendPost(csrftoken, "/core-user/", POST_REQUEST, function (cb, stat) {
+              if (cb == "error") {
+                if (stat == "404") {
+                  document.getElementById("result_forctfd").innerHTML = "ERRORE (" + stat + ")";
+                } else if (stat == "0") {
+                  document.getElementById("result_forctfd").innerHTML = "CARICAMENTO IN CORSO";
+                } else {
+                  document.getElementById("result_forctfd").innerHTML = "wut" + stat;
+                }
+              } else if (typeof cb.error != "undefined") { //errore custom
+                document.getElementById("result_forctfd").innerHTML = "Errore: <font color=\"red\">" + cb.error + "</font>";
+              } else if (typeof cb.ctfd_pwd != "undefined") {
+                document.getElementById("pwd_attuale_ctfd").value = cb.ctfd_pwd;
+                document.getElementById("result_forctfd").innerHTML = "";
+                document.getElementById("insert_forctfd").style.display = "none";
+              }
+            });
+            return false;
+          }
+        </script>
+
+        <script>
+
+          function send_req(POST_REQUEST) {
+
+            var cb = null;
+
+            myObj = sendPost(csrftoken, "/core-user/", POST_REQUEST, function (cb, stat) {
+              if (cb == "error") {
+                if (stat == "404") { //not found
+                  document.getElementById("result").innerHTML = "ERRORE (" + stat + ")";
+                } else if (stat == "0") {
+                  document.getElementById("result").innerHTML = "<img src=\"static/assets/img/loading.gif\">";
+                } else {//altri errori, tipo 500 o 403
+                  document.getElementById("result").innerHTML = "Errore: <font color=\"red\">" + stat + "</font>";
+                }
+              } else if (typeof cb.error != "undefined") { //errore custom
+                document.getElementById("result").innerHTML = "Errore: <font color=\"red\">" + cb.error + "</font>";
+              } else {
+                if (typeof cb.logout != "undefined") {
+                  if (cb.logout == "si") {
+                    var count = 6;
+                    var timer = document.getElementById("timer");
+                    setInterval(function () { if (count > 0) { count--; timer.innerHTML = "(Reindirizzamento in " + count + ")"; } else { window.location.href = "logout/"; } }, 1000);
+
+                  }
+
+                }
+
+                document.getElementById("result").innerHTML = "<font color=\"green\"><b>" + cb.msg_response + "</b></font>";
+              }
+            });
+
+            return cb;
+          }
+
+          function update_infos() {
+
+            var POST_REQUEST = {
+              action: encodeURIComponent("update_infos"),
+              nome: encodeURIComponent(document.getElementById("nome").value),
+              cognome: encodeURIComponent(document.getElementById("cognome").value),
+              professione: encodeURIComponent(document.getElementById("professione").value),
+              ssh_pub_user: encodeURIComponent(document.getElementById("ssh_pub_user").value)
+            };
+
+            send_req(POST_REQUEST);
+
+            return false;
+
+          }
+
+          function update_pwd() {
+
+            var POST_REQUEST = {
+              action: encodeURIComponent("update_pwd"),
+              pwd_attuale: encodeURIComponent(document.getElementById("pwd_attuale").value),
+              new_pwd: encodeURIComponent(document.getElementById("new_pwd").value),
+              r_new_pwd: encodeURIComponent(document.getElementById("r_new_pwd").value)
+            };
+
+            send_req(POST_REQUEST);
+
+            return false;
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

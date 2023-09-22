@@ -1,0 +1,97 @@
+{% if user.is_authenticated %}
+<div class="sidebar" style="background-size: cover; background-position: center;">
+  <div class="logo">
+    <a href="/" class="simple-text logo-normal" style="margin-right: 30px;">
+      <img src="../../static/assets/img/logo_home.svg" style="padding: 10px; padding-top: 5px;" alt="">
+      Home
+    </a>
+  </div>
+
+  <div class="sidebar-wrapper">
+    <ul class="nav">
+      <li class="nav-item {% if 'index' == segment %} active {% endif %}">
+        <a class="nav-link" href="/page-user.html">
+          <p><img src="../../static/assets/img/logo_profilo.svg" style="padding: 10px;" alt=""><b>Profilo</b></p>
+        </a>
+      </li>
+      <li class="nav-item {% if 'ui-icons' in segment %} active {% endif %}">
+        <a class="nav-link" href="/guida.html">
+          <p><img src="../../static/assets/img/logo_howtostart.svg" style="padding: 10px;" alt=""><b>How 2 Start</b></p>
+        </a>
+      </li>
+      <li class="nav-item {% if 'esercizi' in segment %} active {% endif %}">
+        <a class="nav-link" href="/esercizi.html">
+          <p><img src="../../static/assets/img/logo_laboratori.svg" style="padding: 10px;" alt=""><b>Laboratori</b></p>
+        </a>
+      </li>
+      <li class="nav-item {% if 'ui-maps' in segment %} active {% endif %}">
+        <a class="nav-link" href="/cyberkillchain.html">
+          <p><img src="../../static/assets/img/logo_cyberkillchain.svg" style="padding: 10px;" alt=""><b>Cyber Kill
+              Chain</b></p>
+        </a>
+      </li>
+      {% if user.is_admin or user.is_superuser%}
+      <li class="nav-item {% if 'ui-maps' in segment %} active {% endif %}">
+        <a class="nav-link" href="/testa-stato-server">
+          <p><img src="../../static/assets/img/logo_server.svg" style="padding: 10px;" alt=""><b>Gestione Server</b></p>
+        </a>
+      </li>
+      {%endif%}
+      <li class="nav-item {% if 'ui-maps' in segment %} active {% endif %}" style="font-style: italic;">
+        <a class="nav-link" href="{% url 'logout' %}">
+          <p class="font-weight-bold" style="font-size: 15px;"><img src="../../static/assets/img/log-out.svg"
+              style="padding: 10px;" alt="">Logout</p>
+        </a>
+      </li>
+
+
+      <!--
+
+          <li class="nav-item {% if 'ui-notifications' in segment %} active {% endif %}">
+            <a class="nav-link" href="/ui-notifications.html">
+              <i class="material-icons">notifications</i>
+              <p>Notifications</p>
+            </a>
+          </li>
+          
+          <li class="nav-item ">
+            <a class="nav-link" href="/page-rtl-support.html">
+              <i class="material-icons">language</i>
+              <p>RTL Support</p>
+            </a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="{% url 'logout' %}" >
+              <i class="material-icons">directions_run</i>
+              <p>Logout</p>
+            </a>
+          </li>
+
+          <li class="nav-item active-pro ">
+            <a target="_blank" class="nav-link" href="https://appseed.us/admin-dashboards/django-dashboard-material">
+              <i class="material-icons">unarchive</i>
+              <p>See product</p>
+            </a>
+          </li>
+
+
+        -->
+    </ul>
+    {% if user.is_admin or user.is_superuser%}
+    <div style="width:100%; text-align:center;  padding-bottom: 10px; margin-top: 11px;">
+      <img src="static/assets/img/logo_immagine.png"
+        style="margin-left: auto; margin-right: auto; display: block; width:50%; position:relative; bottom:0;" />
+    </div>
+    {%else%}
+    <div style="width:100%; text-align:center;  padding-bottom: 10px; margin-top: 60px;">
+      <img src="static/assets/img/logo_immagine.png"
+        style="margin-left: auto; margin-right: auto; display: block; width:50%; position:relative; bottom:0;" />
+    </div>
+    {%endif%}
+  </div>
+
+
+
+</div>
+{% endif %}

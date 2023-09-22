@@ -1,0 +1,215 @@
+[
+{
+   "model": "app.tag_args",
+   "pk": 1,
+   "fields": {
+      "colore": "#DCB50A",
+      "argomento": "test",
+      "spiegazione": "test"
+   }
+},
+{
+   "model": "app.tag_level",
+   "pk": 1,
+   "fields": {
+      "colore": "DCB50A",
+      "livello": "test"
+   }
+},
+{
+   "model": "app.ctfd_configs",
+   "pk": 1,
+   "fields": {
+      "url_API": "http://tesi.simonestaiano.it",
+      "token_API": "ctfd_6fad207045847294678104af96e67e45eeb8fed3473516a58d1ac7ccf70a349a",
+      "port_API": 8123
+   }
+},
+{
+   "model": "app.sshtunnel_configs",
+   "pk": 1,
+   "fields": {
+      "FULL_PATH_SSH_KEY": "/root/.ssh/id_rsa",
+      "USER_SERVER": "root",
+      "DNS_NAME_SERVER": "manager.tesi.simonestaiano.it"
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 1,
+   "fields": {
+      "nome": "lab1",
+      "sotto_titolo": "test",
+      "docker_name": "httpd:latest",
+      "descrizione": "test",
+      "documentazione": "test",
+      "flag": "test",
+      "categoria": "test",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 3600,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 2,
+   "fields": {
+      "nome": "test2",
+      "sotto_titolo": "test2",
+      "docker_name": "httpd:latest",
+      "descrizione": "d",
+      "documentazione": "d",
+      "flag": "asdsv",
+      "categoria": "ddd",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 3600,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 3,
+   "fields": {
+      "nome": "Nmap",
+      "sotto_titolo": "Nmap",
+      "docker_name": "cyberhack2021pw4/nmap_webserver",
+      "descrizione": "Coming soon",
+      "documentazione": "Coming soon",
+      "flag": "abcd",
+      "categoria": "livello 1",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 3600,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 4,
+   "fields": {
+      "nome": "FTP anonymous",
+      "sotto_titolo": "FTP anonymous",
+      "docker_name": "cyberhack2021pw4/massimo_vulnerable_docker_ftp_anonymous",
+      "descrizione": "Coming soon",
+      "documentazione": "Coming soon",
+      "flag": "abcd",
+      "categoria": "livello 2",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 3600,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.cyberkillchain",
+   "pk": 1,
+   "fields": {
+      "intro": "La cyber kill chain , inizialmente sviluppata da Lockheed Martin a scopo militare, \u00e9  un modello di infrastruttura di sicurezza implementato  per identificare e prevedere le fasi di un attacco informatico. Il modello della catena di uccisione descrive un attacco di un utente malintenzionato esterno che tenta di accedere a dati o risorse all'interno del perimetro di sicurezza L'analisi della cyber kill chain funge da guida per gli analisti per capire quali azioni possono essere utili per l'azione difensiva. Il modello fornisce sette fasi:",
+      "recon": "\u00c8 il primo stadio della catena della cyber kill. In questa fase, l'attaccante raccoglie informazioni sul bersaglio. Gli aggressori cercheranno di identificare e indagare sui sistemi di sicurezza esistenti, quali i firewall, sistemi di prevenzione delle intrusioni e meccanismi di autenticazione. La raccolta di informazioni pu\u00f2 avvenire in maniera attiva, prevedendo ad esempio la scansione delle porte, o in maniera passiva.",
+      "weapon": "In questa fase, l'attore delle minacce sviluppa il malware, appositamente progettato per le vulnerabilit\u00e0 scoperte durante la fase di ricognizione della catena di cyber kill. Gli aggressori, comunemente, iniettano i malware in un sistema per ottenere un punto d'appoggio. Il malware potrebbe essere distribuito tramite e-mail, un sistema o un account compromesso, una \\\"open door\\\" che rappresenta una lacuna nella sicurezza, come una porta aperta o un endpoint non protetto, o un complice interno.",
+      "delivery": "La consegna prevede la trasmissione del codice APT dall'attaccante al sistema informativo di destinazione per lo sfruttamento. Sulla base delle ricerche e delle analisi attuali del Verizon Data Breach Investigation Report 2018, \u00e9 molto probabile che un attacco alla rete abbia origine da un attacco di spear-phishing contro un dipendente interno dell'organizzazione.",
+      "exploitation": "Durante la fase di sfruttamento, il codice malware APT viene eseguito sulla rete di destinazione tramite meccanismi remoti o locali, sfruttando le vulnerabilit\u00e0 rilevate per ottenere l'accesso da superutente al sistema informativo aziendale mirato.",
+      "installation": "Non appena lo sfruttamento del sistema avr\u00e0 avuto successo, il codice malware APT si installer\u00e0 automaticamente sul sistema informativo mirato. A questo punto, il malware APT inizier\u00e0 a scaricare software aggiuntivi, se \u00e9 disponibile l'accesso alla rete. Ci\u00f2 consente al payload di rimanere piccolo e non rilevabile. Le dimensioni ridotte del malware, in questo esempio, avrebbero funzionalit\u00e0 limitate. Pertanto, l'APT scaricher\u00e0 componenti aggiuntivi per avere un migliore controllo dei sistemi informativi sfruttati e penetrare ulteriormente nella rete dell'organizzazione target.",
+      "command_and_control": "La sesta fase, nota anche come C2, avviene quando l'attaccante ha messo in atto il proprio codice APT di gestione e comunicazione sulla rete di destinazione. Questo software consente all'attaccante di gestire completamente il codice APT nell'ambiente e consente all'aggressore di spostarsi pi\u00f9 in profondit\u00e0 nella rete, esfiltrare i dati e condurre operazioni di distruzione o negazione del servizio.",
+      "exfiltration": "Le azioni e gli obiettivi dell'APT dipendono dalla sua missione specifica. L'APT potrebbe essere focalizzato sull'esfiltrazione dei dati, sulla negazione del servizio o sulla distruzione. Gli aggressori troveranno un meccanismo, in genere una sorta di tunneling del protocollo, per copiare i dati all'esterno dell'organizzazione, al fine di vendere i dati sensibili, utilizzarli per ulteriori attacchi (ad esempio nel caso di dati personali dei clienti o dettagli di pagamento) o distribuirlo apertamente per danneggiare l'organizzazione."
+   }
+},
+{
+   "model": "app.macchinaattacco",
+   "pk": 1,
+   "fields": {
+      "nome": "Kali",
+      "docker_name": "cyberhack2021pw4/kali:latest",
+      "descrizione": "Docker Kali Predefinito",
+      "username": "root",
+      "timer_ma": 10800
+   }
+},
+{
+   "model": "app.webssh",
+   "pk": 1,
+   "fields": {
+      "webssh_server": "http://tesi.simonestaiano.it:8888"
+   }
+},
+{
+   "model": "auth.user",
+   "pk": 1,
+   "fields": {
+      "password": "pbkdf2_sha256$120000$8IpnVIQIA8Du$WpC6AJxClh1T7Us0AzV+KZT0K4+QqXU2ARIEY0FkbRc=",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "test@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-09-14T14:47:20.189Z",
+      "groups": [],
+      "user_permissions": []
+   }
+}
+]

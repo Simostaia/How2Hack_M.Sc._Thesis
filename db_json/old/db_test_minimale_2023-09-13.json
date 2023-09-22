@@ -1,0 +1,270 @@
+[
+{
+   "model": "app.user",
+   "pk": 1,
+   "fields": {
+      "last_login": "2023-09-13T17:44:25.179Z",
+      "nome": "Simone",
+      "cognome": "Staiano",
+      "username": "simone",
+      "password": "pbkdf2_sha256$120000$AuKTsI0dRWGR$9uW8nBv5p7Uum/3tax9bxEnZ4EpB3vYY1sycepJO8Xs=",
+      "email": "info@simonestaiano.it",
+      "data": "2023-09-13T17:44:11.141Z",
+      "porta_vpn": "",
+      "porta_ssh": "",
+      "id_ctfd": "",
+      "pwd_ctfd": "",
+      "ssh_psw": "UGZSrmpoGwIDEaKW929jgYGkndTe1S8BM1wpKn5WEjEFT4dhVDIIMMELUrXHg6KmUnF3jm8OZrZ2AS4YJNvZbPR0su7VR1TG2hbp6lMCx74waA0wVC4qthu",
+      "ssh_pub_user": "",
+      "is_superuser": false,
+      "is_admin": false
+   }
+},
+{
+   "model": "app.tag_args",
+   "pk": 1,
+   "fields": {
+      "colore": "#DCB50A",
+      "argomento": "test",
+      "spiegazione": "test"
+   }
+},
+{
+   "model": "app.tag_level",
+   "pk": 1,
+   "fields": {
+      "colore": "DCB50A",
+      "livello": "test"
+   }
+},
+{
+   "model": "app.ctfd_configs",
+   "pk": 1,
+   "fields": {
+      "url_API": "http://54.211.104.229",
+      "token_API": "7469cece9a5b93cc11266ba62cd1ee201d8bc217e1717b690ea6e817bc093120",
+      "port_API": 9000
+   }
+},
+{
+   "model": "app.sshtunnel_configs",
+   "pk": 1,
+   "fields": {
+      "FULL_PATH_SSH_KEY": "/home/ubuntu/.ssh/id_rsa",
+      "USER_SERVER": "docker",
+      "DNS_NAME_SERVER": "134.122.59.226"
+   }
+},
+{
+   "model": "app.sshtunnel_configs",
+   "pk": 2,
+   "fields": {
+      "FULL_PATH_SSH_KEY": "/home/ubuntu/.ssh/id_rsa",
+      "USER_SERVER": "docker",
+      "DNS_NAME_SERVER": "134.122.59.239"
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 5,
+   "fields": {
+      "nome": "Mars",
+      "sotto_titolo": "Level 4",
+      "docker_name": "cyberhack2021pw4/smtp_server:latest",
+      "descrizione": ".",
+      "documentazione": "Una volta individuato il servizio attivo verifica, tra le utenze attive, quella anomala. La flag coincider\u00e0 con quest\u2019ultima.",
+      "flag": "pluto",
+      "categoria": "Level 4",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 7200,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 7,
+   "fields": {
+      "nome": "Jupiter",
+      "sotto_titolo": "Level 5",
+      "docker_name": "cyberhack2021pw4/sqlinject:latest",
+      "descrizione": ".",
+      "documentazione": "Dopo aver individuato il servizio attivo, collegati al server. Una volta sul server, individua la flag rintracciando una possibile vulnerabilit\u00e0, legata ad applicazioni che sfruttano il linguaggio SQL per la gestione dati tramite database relazionali.",
+      "flag": "sqlinjection",
+      "categoria": "Level 5",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 7200,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 8,
+   "fields": {
+      "nome": "Mercury",
+      "sotto_titolo": "Level 1",
+      "docker_name": "cyberhack2021pw4/nmap_webserver:latest",
+      "descrizione": ".",
+      "documentazione": "Lo scopo del laboratorio \u00e8 quello di apprendere l\u2019importanza del comando NMAP, essenziale sin dalle fasi iniziali della cyber kill chain. NMAP ti aiuter\u00e0 a individuare la flag che, in questo laboratorio, coincider\u00e0 con la versione di un servizio attivo.",
+      "flag": "Apache httpd 2.4.29",
+      "categoria": "Level 1",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 7200,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 9,
+   "fields": {
+      "nome": "Venus",
+      "sotto_titolo": "Level 2",
+      "docker_name": "cyberhack2021pw4/ftp_anonymoys_login:latest",
+      "descrizione": ".",
+      "documentazione": "A partire da quanto appreso nel precedente laboratorio, in questa fase dovrai - dopo aver individuato il servizio attivo \u2013 collegarti al server FTP. Individua il file contenente la flag.",
+      "flag": "fdd93cbfb66fd417edce4dd8e92d81e0",
+      "categoria": "Level 2",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 7200,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 10,
+   "fields": {
+      "nome": "Earth",
+      "sotto_titolo": "Level 3",
+      "docker_name": "cyberhack2021pw4/ftp_anonymous_reverse_shell:latest",
+      "descrizione": ".",
+      "documentazione": "Scopo: Facendo seguito a quanto appreso nel secondo laboratorio, dovrai effettuare l\u2019upload di una reverse shell. Una volta avviata, individua all\u2019interno delle cartelle il file contenente la flag.",
+      "flag": "aaa6047c6dbdfa7b48c2f2f8256e3fed",
+      "categoria": "Level 3",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 7200,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.cyberkillchain",
+   "pk": 1,
+   "fields": {
+      "intro": "La cyber kill chain , inizialmente sviluppata da Lockheed Martin a scopo militare, \u00e8  un modello di infrastruttura di sicurezza implementato  per identificare e prevedere le fasi di un attacco informatico. Il modello della catena di uccisione descrive un attacco di un utente malintenzionato esterno che tenta di accedere a dati o risorse all'interno del perimetro di sicurezza L\u2019analisi della cyber kill chain funge da guida per gli analisti per capire quali azioni possono essere utili per l\u2019azione difensiva. Il modello fornisce sette fasi:",
+      "recon": "\u00c8 il primo stadio della catena della cyber kill. In questa fase, l\u2019attaccante raccoglie informazioni sul bersaglio. Gli aggressori cercheranno di identificare e indagare sui sistemi di sicurezza esistenti, quali i firewall, sistemi di prevenzione delle intrusioni e meccanismi di autenticazione. La raccolta di informazioni pu\u00f2 avvenire in maniera attiva, prevedendo ad esempio la scansione delle porte, o in maniera passiva.",
+      "weapon": "In questa fase, l'attore delle minacce sviluppa il malware, appositamente progettato per le vulnerabilit\u00e0 scoperte durante la fase di ricognizione della catena di cyber kill. Gli aggressori, comunemente, iniettano i malware in un sistema per ottenere un punto d'appoggio. Il malware potrebbe essere distribuito tramite e-mail, un sistema o un account compromesso, una \"open door\" che rappresenta una lacuna nella sicurezza, come una porta aperta o un endpoint non protetto, o un complice interno.",
+      "delivery": "La consegna prevede la trasmissione del codice APT dall'attaccante al sistema informativo di destinazione per lo sfruttamento. Sulla base delle ricerche e delle analisi attuali del Verizon Data Breach Investigation Report 2018, \u00e8 molto probabile che un attacco alla rete abbia origine da un attacco di spear-phishing contro un dipendente interno dell'organizzazione.",
+      "exploitation": "Durante la fase di sfruttamento, il codice malware APT viene eseguito sulla rete di destinazione tramite meccanismi remoti o locali, sfruttando le vulnerabilit\u00e0 rilevate per ottenere l'accesso da superutente al sistema informativo aziendale mirato.",
+      "installation": "Non appena lo sfruttamento del sistema avr\u00e0 avuto successo, il codice malware APT si installer\u00e0 automaticamente sul sistema informativo mirato. A questo punto, il malware APT inizier\u00e0 a scaricare software aggiuntivi, se \u00e8 disponibile l'accesso alla rete. Ci\u00f2 consente al payload di rimanere piccolo e non rilevabile. Le dimensioni ridotte del malware, in questo esempio, avrebbero funzionalit\u00e0 limitate. Pertanto, l'APT scaricher\u00e0 componenti aggiuntivi per avere un migliore controllo dei sistemi informativi sfruttati e penetrare ulteriormente nella rete dell'organizzazione target.",
+      "command_and_control": "La sesta fase, nota anche come \u201cC2\u201d, avviene quando l'attaccante ha messo in atto il proprio codice APT di gestione e comunicazione sulla rete di destinazione. Questo software consente all'attaccante di gestire completamente il codice APT nell'ambiente e consente all'aggressore di spostarsi pi\u00f9 in profondit\u00e0 nella rete, esfiltrare i dati e condurre operazioni di distruzione o negazione del servizio.",
+      "exfiltration": "Le azioni e gli obiettivi dell'APT dipendono dalla sua missione specifica. L'APT potrebbe essere focalizzato sull'esfiltrazione dei dati, sulla negazione del servizio o sulla distruzione. Gli aggressori troveranno un meccanismo, in genere una sorta di tunneling del protocollo, per copiare i dati all'esterno dell'organizzazione, al fine di vendere i dati sensibili, utilizzarli per ulteriori attacchi (ad esempio nel caso di dati personali dei clienti o dettagli di pagamento) o distribuirlo apertamente per danneggiare l'organizzazione."
+   }
+},
+{
+   "model": "app.macchinaattacco",
+   "pk": 1,
+   "fields": {
+      "nome": "Sun - Kali",
+      "docker_name": "cyberhack2021pw4/kali:latest",
+      "descrizione": "Usa questa macchina per risolvere i laboratori!",
+      "username": "root",
+      "timer_ma": 21600
+   }
+},
+{
+   "model": "auth.user",
+   "pk": 1,
+   "fields": {
+      "password": "pbkdf2_sha256$120000$T3Zjv6k0nFMu$pEEji7dfAd3i3uqRrHBtd9cl4eNASyon37IZDw0I5FQ=",
+      "last_login": "2023-09-13T17:42:50.931Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@admin.it",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-11-12T15:08:35.873Z",
+      "groups": [],
+      "user_permissions": []
+   }
+}
+]
