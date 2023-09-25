@@ -33,12 +33,16 @@ COPY . /app
 
 RUN rm db.sqlite3 || true
 
+#Essendo una build di debug, preferisco partire da un db noto
 # crea python per classi db
 RUN python3 manage.py makemigrations
 # crea il db
 RUN python3 manage.py migrate
 #RUN python3 manage.py createsuperuser --username admin --email test@example.com
-RUN python3 manage.py loaddata db_json/db_tesi_docker.json
+#RUN python3 manage.py loaddata db_json/db_tesi_docker.json
+RUN python3 manage.py loaddata db_json/db_22_09.json
+
+
 
 ENV DEBUG=True
 

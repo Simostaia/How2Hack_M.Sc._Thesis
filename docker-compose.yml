@@ -8,23 +8,23 @@ services:
          - "8000:8000"
       volumes:
          - /root/.ssh:/root/.ssh # TODO: muovi in .data/
-    
+         # - .data/ssh:/root/.ssh   
+         # - .data/django:/app/db_data # TODO: spostare il db in una cartella condivisa
+          
    ctfd:
-      image: xsimoss/ctfd:v1.1.0
+      image: ctfd/ctfd:latest
+      user: root
       restart: always
       ports:
          - "8123:8000"
-      # TODO: in produzione usare un volume per il db
-      # volumes:
-      #    - .data/CTFd/ctfd.db:/opt/CTFd/CTFd/ctfd.db
-      #    - .data/CTFd/logs:/var/log/CTFd
-      #    - .data/CTFd/uploads:/var/uploads
-      # environment:
-      #    - UPLOAD_FOLDER=/var/uploads
-      #    - DATABASE_URL=mysql+pymysql://ctfd:ctfd@db/ctfd
-      #    - REVERSE_PROXY=true
-      
-      
+      environment:
+         - DATABASE_URL=sqlite:////app/ctfd.db
+         - UPLOAD_FOLDER=/app/uploads
+         - LOG_FOLDER=/app/logs
+      #  - REVERSE_PROXY=true
+      volumes:
+         - .data/ctfd:/app
+
    webssh:
       image: cyberhack2021pw4/webssh:latest
       restart: always

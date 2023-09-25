@@ -1,0 +1,353 @@
+[
+{
+   "model": "app.user",
+   "pk": 1,
+   "fields": {
+      "last_login": null,
+      "nome": "Francesco",
+      "cognome": "Esposito",
+      "username": "Francesco Esposito",
+      "password": "pbkdf2_sha256$120000$zx9GJVo8VKFp$EY1O+AIqKFWIYPoY25Fv2eK/56h8GJO5LZItqdOotgg=",
+      "email": "FrancescoEsposito@libero.it",
+      "data": "2023-09-20T19:50:31.340Z",
+      "porta_vpn": "",
+      "porta_ssh": "",
+      "id_ctfd": "",
+      "pwd_ctfd": "",
+      "ssh_psw": "jD86qk9RW7sedG6vqlDrpmVmLLneNKKtCx97brDuOW2RC1b1xZp8CEjcKuAT5tIBQ3CUWJJTLoFuA1JLzGyUD8mjaJi84zr63grsIz3moTDjKAasSGfwqkO",
+      "ssh_pub_user": "",
+      "is_superuser": false,
+      "is_admin": false
+   }
+},
+{
+   "model": "app.user",
+   "pk": 2,
+   "fields": {
+      "last_login": "2023-09-20T20:02:19.583Z",
+      "nome": "Emiliano",
+      "cognome": "Staiano",
+      "username": "Emiliano",
+      "password": "pbkdf2_sha256$120000$fz58CiMav13b$p20cTk7f3PK2HFkE/uiZlhSDgDeZLgjvLsSqT7/qTuQ=",
+      "email": "emiliano@unina.it",
+      "data": "2023-09-20T19:59:54.657Z",
+      "porta_vpn": "",
+      "porta_ssh": "56034",
+      "id_ctfd": "3",
+      "pwd_ctfd": "3NEqv0S0AG",
+      "ssh_psw": "jD86qk9RW7sedG6vqlDrpmVmLLneNKKtCx97brDuOW2RC1b1xZp8CEjcKuAT5tIBQ3CUWJJTLoFuA1JLzGyUD8mjaJi84zr63grsIz3moTDjKAasSGfwqkO",
+      "ssh_pub_user": "",
+      "is_superuser": false,
+      "is_admin": false
+   }
+},
+{
+   "model": "app.user",
+   "pk": 3,
+   "fields": {
+      "last_login": null,
+      "nome": "Carla",
+      "cognome": "Sarda",
+      "username": "Carla",
+      "password": "pbkdf2_sha256$120000$1r7XcDBMWijP$it8gUIqNgaV6QA4gcueGqLNRtshSKreYRTz9o0Z+TtQ=",
+      "email": "carlasarda@liberi.it",
+      "data": "2023-09-20T20:39:35.458Z",
+      "porta_vpn": "",
+      "porta_ssh": "",
+      "id_ctfd": "",
+      "pwd_ctfd": "",
+      "ssh_psw": "jD86qk9RW7sedG6vqlDrpmVmLLneNKKtCx97brDuOW2RC1b1xZp8CEjcKuAT5tIBQ3CUWJJTLoFuA1JLzGyUD8mjaJi84zr63grsIz3moTDjKAasSGfwqkO",
+      "ssh_pub_user": "",
+      "is_superuser": false,
+      "is_admin": false
+   }
+},
+{
+   "model": "app.user",
+   "pk": 4,
+   "fields": {
+      "last_login": "2023-09-20T20:49:22.201Z",
+      "nome": "Imma",
+      "cognome": "Borrelli",
+      "username": "Capri",
+      "password": "pbkdf2_sha256$120000$nPAXDXd65TmH$jJ4aXyxWLBRD27iwjl2oUyHfZXFzcEgeYnCMYmvuIYg=",
+      "email": "carlasarda@libero.it",
+      "data": "2023-09-20T20:45:58.174Z",
+      "porta_vpn": "",
+      "porta_ssh": "50779",
+      "id_ctfd": "4",
+      "pwd_ctfd": "RJyiBqIf5t",
+      "ssh_psw": "jD86qk9RW7sedG6vqlDrpmVmLLneNKKtCx97brDuOW2RC1b1xZp8CEjcKuAT5tIBQ3CUWJJTLoFuA1JLzGyUD8mjaJi84zr63grsIz3moTDjKAasSGfwqkO",
+      "ssh_pub_user": "",
+      "is_superuser": false,
+      "is_admin": false
+   }
+},
+{
+   "model": "app.user",
+   "pk": 5,
+   "fields": {
+      "last_login": "2023-09-21T17:24:38.657Z",
+      "nome": "Simone",
+      "cognome": "Simones",
+      "username": "Simone",
+      "password": "pbkdf2_sha256$120000$hs1SH4LBKtca$3iyi8YWxspgzt7qSeyHzMftCBgC0eAYbGzkM2F2TD28=",
+      "email": "simone96@unina.it",
+      "data": "2023-09-21T17:24:21.995Z",
+      "porta_vpn": "",
+      "porta_ssh": "51296",
+      "id_ctfd": "5",
+      "pwd_ctfd": "R3oEzjnwmB",
+      "ssh_psw": "jD86qk9RW7sedG6vqlDrpmVmLLneNKKtCx97brDuOW2RC1b1xZp8CEjcKuAT5tIBQ3CUWJJTLoFuA1JLzGyUD8mjaJi84zr63grsIz3moTDjKAasSGfwqkO",
+      "ssh_pub_user": "",
+      "is_superuser": false,
+      "is_admin": false
+   }
+},
+{
+   "model": "app.statistiche",
+   "pk": 1,
+   "fields": {
+      "lab_avviati": 0,
+      "flag_trovate": 0,
+      "guide_lette": 0,
+      "punteggio": 0,
+      "user_id": 2
+   }
+},
+{
+   "model": "app.statistiche",
+   "pk": 2,
+   "fields": {
+      "lab_avviati": 3,
+      "flag_trovate": 0,
+      "guide_lette": 0,
+      "punteggio": 0,
+      "user_id": 4
+   }
+},
+{
+   "model": "app.statistiche",
+   "pk": 3,
+   "fields": {
+      "lab_avviati": 4,
+      "flag_trovate": 2,
+      "guide_lette": 0,
+      "punteggio": 20,
+      "user_id": 5
+   }
+},
+{
+   "model": "app.tag_args",
+   "pk": 1,
+   "fields": {
+      "colore": "#DCB50A",
+      "argomento": "test",
+      "spiegazione": "test"
+   }
+},
+{
+   "model": "app.tag_level",
+   "pk": 1,
+   "fields": {
+      "colore": "DCB50A",
+      "livello": "test"
+   }
+},
+{
+   "model": "app.ctfd_configs",
+   "pk": 1,
+   "fields": {
+      "url_API": "http://tesi.simonestaiano.it",
+      "token_API": "ctfd_6fad207045847294678104af96e67e45eeb8fed3473516a58d1ac7ccf70a349a",
+      "port_API": 8123
+   }
+},
+{
+   "model": "app.sshtunnel_configs",
+   "pk": 1,
+   "fields": {
+      "FULL_PATH_SSH_KEY": "/root/.ssh/id_rsa",
+      "USER_SERVER": "root",
+      "DNS_NAME_SERVER": "manager.tesi.simonestaiano.it"
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 5,
+   "fields": {
+      "nome": "Mercury",
+      "sotto_titolo": "Level 1",
+      "docker_name": "cyberhack2021pw4/nmap_webserver:latest",
+      "descrizione": ".",
+      "documentazione": "Lo scopo del laboratorio \u00e8 quello di apprendere l'importanza del tool NMAP, essenziale sin dalle fasi iniziali della cyber kill chain. NMAP ti aiuter\u00e0 a individuare la flag che, in questo laboratorio,  sar\u00e0 corrispondente alla versione di un servizio attivo.",
+      "flag": "Apache httpd 2.4.29",
+      "categoria": "Level 1",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 7200,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 6,
+   "fields": {
+      "nome": "Venus",
+      "sotto_titolo": "Level 2",
+      "docker_name": "cyberhack2021pw4/ftp_anonymoys_login:v2",
+      "descrizione": ".",
+      "documentazione": "A partire da quanto appreso nel precedente laboratorio, in questo laboratorio dovrai - dopo aver individuato il servizio attivo - collegarti al server FTP. Individua il file contenente la flag.",
+      "flag": "fdd93cbfb66fd417edce4dd8e92d81e0",
+      "categoria": "Level 2",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 7200,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 7,
+   "fields": {
+      "nome": "Earth",
+      "sotto_titolo": "Level 3",
+      "docker_name": "cyberhack2021pw4/ftp_anonymous_reverse_shell:latest",
+      "descrizione": ".",
+      "documentazione": "Facendo seguito a quanto appreso nel secondo laboratorio, dovrai effettuare l'upload di una reverse shell. Una volta avviata, individua all'interno delle cartelle il file contenente la flag.",
+      "flag": "aaa6047c6dbdfa7b48c2f2f8256e3fed",
+      "categoria": "Level 3",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 7200,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.lab",
+   "pk": 8,
+   "fields": {
+      "nome": "Mars",
+      "sotto_titolo": "Level 4",
+      "docker_name": "cyberhack2021pw4/massimo_vulnerable_docker_smtp:latest",
+      "descrizione": ".",
+      "documentazione": "Una volta individuato il servizio attivo verifica, tra le utenze attive, quella anomala. La flag coincider\u00e0 con quest'ultima.",
+      "flag": "pluto",
+      "categoria": "Level 4",
+      "valore_flag": 10,
+      "hint": null,
+      "hint_cost": 4,
+      "durata_secondi": 7200,
+      "cap_add": "NET_ADMIN",
+      "detach": "True",
+      "auto_remove": "True",
+      "livello": null,
+      "argomento_1": null,
+      "argomento_2": null,
+      "argomento_3": null,
+      "argomento_4": null,
+      "argomento_5": null,
+      "argomento_6": null,
+      "argomento_7": null,
+      "argomento_8": null,
+      "argomento_9": null,
+      "argomento_10": null,
+      "argomento_11": null
+   }
+},
+{
+   "model": "app.cyberkillchain",
+   "pk": 1,
+   "fields": {
+      "intro": "La cyber kill chain , inizialmente sviluppata da Lockheed Martin a scopo militare, \u00e9  un modello di infrastruttura di sicurezza implementato  per identificare e prevedere le fasi di un attacco informatico. Il modello della catena di uccisione descrive un attacco di un utente malintenzionato esterno che tenta di accedere a dati o risorse all'interno del perimetro di sicurezza L'analisi della cyber kill chain funge da guida per gli analisti per capire quali azioni possono essere utili per l'azione difensiva. Il modello fornisce sette fasi:",
+      "recon": "\u00c8 il primo stadio della catena della cyber kill. In questa fase, l'attaccante raccoglie informazioni sul bersaglio. Gli aggressori cercheranno di identificare e indagare sui sistemi di sicurezza esistenti, quali i firewall, sistemi di prevenzione delle intrusioni e meccanismi di autenticazione. La raccolta di informazioni pu\u00f2 avvenire in maniera attiva, prevedendo ad esempio la scansione delle porte, o in maniera passiva.",
+      "weapon": "In questa fase, l'attore delle minacce sviluppa il malware, appositamente progettato per le vulnerabilit\u00e0 scoperte durante la fase di ricognizione della catena di cyber kill. Gli aggressori, comunemente, iniettano i malware in un sistema per ottenere un punto d'appoggio. Il malware potrebbe essere distribuito tramite e-mail, un sistema o un account compromesso, una \\\"open door\\\" che rappresenta una lacuna nella sicurezza, come una porta aperta o un endpoint non protetto, o un complice interno.",
+      "delivery": "La consegna prevede la trasmissione del codice APT dall'attaccante al sistema informativo di destinazione per lo sfruttamento. Sulla base delle ricerche e delle analisi attuali del Verizon Data Breach Investigation Report 2018, \u00e9 molto probabile che un attacco alla rete abbia origine da un attacco di spear-phishing contro un dipendente interno dell'organizzazione.",
+      "exploitation": "Durante la fase di sfruttamento, il codice malware APT viene eseguito sulla rete di destinazione tramite meccanismi remoti o locali, sfruttando le vulnerabilit\u00e0 rilevate per ottenere l'accesso da superutente al sistema informativo aziendale mirato.",
+      "installation": "Non appena lo sfruttamento del sistema avr\u00e0 avuto successo, il codice malware APT si installer\u00e0 automaticamente sul sistema informativo mirato. A questo punto, il malware APT inizier\u00e0 a scaricare software aggiuntivi, se \u00e9 disponibile l'accesso alla rete. Ci\u00f2 consente al payload di rimanere piccolo e non rilevabile. Le dimensioni ridotte del malware, in questo esempio, avrebbero funzionalit\u00e0 limitate. Pertanto, l'APT scaricher\u00e0 componenti aggiuntivi per avere un migliore controllo dei sistemi informativi sfruttati e penetrare ulteriormente nella rete dell'organizzazione target.",
+      "command_and_control": "La sesta fase, nota anche come C2, avviene quando l'attaccante ha messo in atto il proprio codice APT di gestione e comunicazione sulla rete di destinazione. Questo software consente all'attaccante di gestire completamente il codice APT nell'ambiente e consente all'aggressore di spostarsi pi\u00f9 in profondit\u00e0 nella rete, esfiltrare i dati e condurre operazioni di distruzione o negazione del servizio.",
+      "exfiltration": "Le azioni e gli obiettivi dell'APT dipendono dalla sua missione specifica. L'APT potrebbe essere focalizzato sull'esfiltrazione dei dati, sulla negazione del servizio o sulla distruzione. Gli aggressori troveranno un meccanismo, in genere una sorta di tunneling del protocollo, per copiare i dati all'esterno dell'organizzazione, al fine di vendere i dati sensibili, utilizzarli per ulteriori attacchi (ad esempio nel caso di dati personali dei clienti o dettagli di pagamento) o distribuirlo apertamente per danneggiare l'organizzazione."
+   }
+},
+{
+   "model": "app.macchinaattacco",
+   "pk": 1,
+   "fields": {
+      "nome": "Kali",
+      "docker_name": "cyberhack2021pw4/kali:latest",
+      "descrizione": "Docker Kali Predefinito",
+      "username": "root",
+      "timer_ma": 10800
+   }
+},
+{
+   "model": "app.webssh",
+   "pk": 1,
+   "fields": {
+      "webssh_server": "http://tesi.simonestaiano.it:8888"
+   }
+},
+{
+   "model": "auth.user",
+   "pk": 1,
+   "fields": {
+      "password": "pbkdf2_sha256$120000$8IpnVIQIA8Du$WpC6AJxClh1T7Us0AzV+KZT0K4+QqXU2ARIEY0FkbRc=",
+      "last_login": "2023-09-22T09:41:41.849Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "test@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-09-14T14:47:20.189Z",
+      "groups": [],
+      "user_permissions": []
+   }
+}
+]
