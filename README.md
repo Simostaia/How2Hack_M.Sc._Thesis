@@ -55,7 +55,7 @@ Here's a step-by-step guide to setting up your environment:
 ```
 git clone https://github.com/Cyber-HackAdemy-UniNa/pw2021_gruppo4.git
 cd pw2021_gruppo4
-docker compose up -d --pull alway --build
+docker compose up -d --pull always --build
 ``` 
 
 - This command will use the Docker Compose configuration to start the necessary services:
